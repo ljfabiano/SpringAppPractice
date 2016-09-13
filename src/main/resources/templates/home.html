@@ -1,0 +1,14 @@
+<html>
+<body>
+{{#name}}Hello, {{.}}!{{/name}}
+
+<a href="/logout">Click here to log out</a>
+
+{{^name}}
+<form action="/login" method="post">
+    <input type="text" placeholder="Enter your name" name="userName"/>
+    <button type="submit">Login</button>
+</form>
+{{/name}}
+</body>
+</html>
